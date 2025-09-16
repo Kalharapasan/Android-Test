@@ -11,6 +11,8 @@
         android:layout_width="312dp"
         android:layout_height="86dp"
         android:text="Select You Rating"
+        android:textAlignment="center"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.345"
@@ -29,7 +31,8 @@
         android:id="@+id/button"
         android:layout_width="166dp"
         android:layout_height="75dp"
-        android:text="Button"
+        android:text="Ok"
+        android:textSize="34sp"
         tools:layout_editor_absoluteX="122dp"
         tools:layout_editor_absoluteY="328dp" />
 
@@ -37,7 +40,9 @@
         android:id="@+id/textView"
         android:layout_width="258dp"
         android:layout_height="80dp"
-        android:text="TextView"
+        android:text="Output"
+        android:textAlignment="center"
+        android:textSize="34sp"
         tools:layout_editor_absoluteX="67dp"
         tools:layout_editor_absoluteY="445dp" />
 
