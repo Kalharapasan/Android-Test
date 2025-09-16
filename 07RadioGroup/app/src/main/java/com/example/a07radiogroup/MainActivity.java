@@ -1,24 +1,53 @@
 package com.example.a07radiogroup;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    RadioGroup radioGroup;
+    RadioButton radioButton1;
+    RadioButton radioButton2;
+    TextView textView;
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        radioGroup.findViewById(R.id.radioGroup);
+        radioButton1.findViewById(R.id.radioButton1);
+        radioButton2.findViewById(R.id.radioButton2);
+        button.findViewById(R.id.button);
+        textView.findViewById(R.id.textView);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String msg ="You Say ";
+                if (radioButton1.isChecked()) {
+                    msg += radioButton1.getText();
+                } else if (radioButton2.isChecked()) {
+                    msg += radioButton2.getText();
+                } else {
+                    msg = "Please select an option!";
+                }
+
+                textView.setText(msg);
+
+                // ✅ Clear selection after showing result
+                radioGroup.clearCheck();
+            }
         });
+
     }
 }
