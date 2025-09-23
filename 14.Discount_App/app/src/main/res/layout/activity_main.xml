@@ -81,7 +81,7 @@
         android:layout_height="53dp"
         android:text="Calculat"
         android:textStyle="bold"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,8 +90,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="131dp"
-        android:layout_height="66dp"
+        android:layout_width="125dp"
+        android:layout_height="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.621"
