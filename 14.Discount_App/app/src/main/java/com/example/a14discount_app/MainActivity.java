@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                // calculate
+
                 dis = (seekbarval * val) / 100.0;
                 total = val - dis;
 
