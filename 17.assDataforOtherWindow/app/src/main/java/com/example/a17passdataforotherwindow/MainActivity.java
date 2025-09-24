@@ -1,4 +1,4 @@
-package com.example.a16openotherwindow;
+package com.example.a17passdataforotherwindow;
 
 import android.os.Bundle;
 
@@ -8,12 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
+
 
     }
 }
