@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._17PassDataForOtherWindow">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
