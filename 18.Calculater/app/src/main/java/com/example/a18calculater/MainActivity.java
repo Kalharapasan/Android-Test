@@ -1,12 +1,11 @@
 package com.example.a18calculater;
 
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
