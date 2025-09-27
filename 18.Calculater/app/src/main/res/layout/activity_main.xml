@@ -36,48 +36,48 @@
             android:id="@+id/btnMC"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_memory"
             android:text="MC"
-            android:textColor="#666666"
+            android:textColor="#000000"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnMR"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_memory"
             android:text="MR"
-            android:textColor="#666666"
+            android:textColor="#000000"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnMPlus"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_memory"
             android:text="M+"
-            android:textColor="#666666"
+            android:textColor="#000000"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnMMinus"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_memory"
             android:text="M-"
-            android:textColor="#666666"
+            android:textColor="#000000"
             android:textSize="14sp" />
 
         <!-- Row 2: MS, M~, %, CE -->
@@ -85,48 +85,48 @@
             android:id="@+id/btnMS"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_memory"
             android:text="MS"
-            android:textColor="#666666"
+            android:textColor="#000000"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnMTilde"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_memory"
             android:text="M~"
-            android:textColor="#666666"
+            android:textColor="#000000"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnPercent"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_function"
             android:text="%"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnCE"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_function"
             android:text="CE"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="16sp" />
 
         <!-- Row 3: 1/x, x², ²√x, C -->
@@ -134,48 +134,48 @@
             android:id="@+id/btnOneOverX"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_function"
             android:text="¹/x"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnSquare"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_function"
             android:text="x²"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnSqrt"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_function"
             android:text="²√x"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnC"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_function"
             android:text="C"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <!-- Row 4: 7, 8, 9, × -->
@@ -219,12 +219,12 @@
             android:id="@+id/btnMultiply"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_operator"
             android:text="×"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="20sp" />
 
         <!-- Row 5: 4, 5, 6, - -->
@@ -268,12 +268,12 @@
             android:id="@+id/btnMinus"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_operator"
             android:text="−"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="20sp" />
 
         <!-- Row 6: 1, 2, 3, + -->
@@ -317,12 +317,12 @@
             android:id="@+id/btnPlus"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_operator"
             android:text="+"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="20sp" />
 
         <!-- Row 7: +/-, 0, ., = -->
@@ -330,12 +330,12 @@
             android:id="@+id/btnPlusMinus"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:background="@drawable/button_function"
             android:text="+/−"
-            android:textColor="#333333"
+            android:textColor="#000000"
             android:textSize="16sp" />
 
         <Button
