@@ -1,6 +1,5 @@
 package com.example.a21sqlite_text;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -41,12 +40,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean insertData(String name,String surname,int mark){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(COL_1,name);
-        contentValues.put(COL_2,surname);
-        contentValues.put(COL_3,mark);
-    }
+
 
 }
