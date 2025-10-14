@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     DatabaseHelper data;
     EditText name,surname,marks,updateID;
-    Button add,view,update;
+    Button add,view,update,delete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
         view = findViewById(R.id.view);
         update =findViewById(R.id.update);
         updateID =findViewById(R.id.updateID);
+        delete =findViewById(R.id.delete);
 
         addData();
         viewAll();
         updates();
-
-
+        delete();
 
     }
     public void addData(){
@@ -99,6 +99,20 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"Data Update ",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(MainActivity.this,"Data Not Update ",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    public void delete(){
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Integer deletedRow = data.deleteData(updateID.getText().toString());
+                if (deletedRow > 0){
+                    Toast.makeText(MainActivity.this,"Data Delete ",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(MainActivity.this,"Data not Delete ",Toast.LENGTH_SHORT).show();
                 }
             }
         });
