@@ -1,0 +1,35 @@
+// ========================================
+// File: build.gradle (Project level)
+// Location: build.gradle
+// ========================================
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '8.1.0' apply false
+    id 'com.android.library' version '8.1.0' apply false
+}
+
+
+// ========================================
+// File: settings.gradle
+// Location: settings.gradle
+// ========================================
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "StudentApp"
+include ':app'
