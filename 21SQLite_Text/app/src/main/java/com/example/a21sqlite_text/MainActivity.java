@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         add =findViewById(R.id.add);
         view = findViewById(R.id.view);
         addData();
+        viewAll();
 
 
 
