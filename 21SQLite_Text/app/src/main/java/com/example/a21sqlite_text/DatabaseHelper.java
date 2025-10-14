@@ -1,8 +1,11 @@
 package com.example.a21sqlite_text;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -38,6 +41,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+DATABASE_NAME);
         onCreate(db);
 
+    }
+
+    public boolean insertData(String name ,String surName ,String marks){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues =new ContentValues();
+        contentValues.put(COL_2,name);
+        contentValues.put(COL_3,surName);
+        contentValues.put(COL_4,marks);
+        long result = db.insert(TABLE_NAME,null,contentValues);
+        if (result == -1){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
+    public Cursor getAllData(){
+        SQLiteDatabase db =this.getWritableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_NAME,null);
+        return res;
     }
 
 

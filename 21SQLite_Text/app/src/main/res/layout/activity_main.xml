@@ -25,7 +25,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Marks"
-        android:inputType="number"
         android:layout_marginTop="10dp" />
 
     <Button
@@ -33,5 +32,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ADD DATA"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View DATA"
         android:layout_marginTop="20dp" />
 </LinearLayout>
