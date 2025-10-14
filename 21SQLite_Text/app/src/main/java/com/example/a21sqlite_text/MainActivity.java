@@ -17,21 +17,26 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     DatabaseHelper data;
-    EditText name,surname,marks;
-    Button add,view;
+    EditText name,surname,marks,updateID;
+    Button add,view,update;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         data =new DatabaseHelper(this);
         name =findViewById(R.id.name);
         surname =findViewById(R.id.surname);
         marks =findViewById(R.id.mark);
         add =findViewById(R.id.add);
         view = findViewById(R.id.view);
+        update =findViewById(R.id.update);
+        updateID =findViewById(R.id.updateID);
+
         addData();
         viewAll();
+        updates();
 
 
 
@@ -79,6 +84,24 @@ public class MainActivity extends AppCompatActivity {
         builder.setTitle(title);
         builder.setMessage(message);
         builder.show();
+    }
+
+    public  void updates(){
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isUpdate =  data.updateData(
+                        updateID.getText().toString(),
+                        name.getText().toString(),
+                        surname.getText().toString(),
+                        marks.getText().toString());
+                if (isUpdate == true){
+                    Toast.makeText(MainActivity.this,"Data Update ",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(MainActivity.this,"Data Not Update ",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
 }
