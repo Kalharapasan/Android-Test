@@ -50,5 +50,20 @@ public class DBHelp extends SQLiteOpenHelper {
         return db.insert("users",null,contentValues);
     }
 
+    public boolean updateData (String id,String fName,String lName,String gender,String email){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues =new ContentValues();
+        contentValues.put("fristName",fName);
+        contentValues.put("lastName",lName);
+        contentValues.put("gender",gender);
+        contentValues.put("mail",email);
+        int result =db.update("users",contentValues,"ID = ? ",new String[]{id});
+        return result >0;
+    }
 
+    public boolean deleteData(String id){
+        SQLiteDatabase db =this.getWritableDatabase();
+        int result =db.delete("users","ID =?",new String[]{id});
+        return result >0;
+    }
 }
