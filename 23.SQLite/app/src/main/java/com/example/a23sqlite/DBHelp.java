@@ -1,5 +1,6 @@
 package com.example.a23sqlite;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.DatabaseErrorHandler;
@@ -37,6 +38,16 @@ public class DBHelp extends SQLiteOpenHelper {
     public Cursor getAllData(){
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery("SELECT * FROM users",null);
+    }
+
+    public long inserData(String fName,String lName,String gender,String email){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues =new ContentValues();
+        contentValues.put("fristName",fName);
+        contentValues.put("lastName",lName);
+        contentValues.put("gender",gender);
+        contentValues.put("mail",email);
+        return db.insert("users",null,contentValues);
     }
 
 
