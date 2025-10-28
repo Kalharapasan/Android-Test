@@ -1,6 +1,7 @@
 package com.example.a23sqlite;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -32,4 +33,11 @@ public class DBHelp extends SQLiteOpenHelper {
         onCreate(db);
 
     }
+
+    public Cursor getAllData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM users",null);
+    }
+
+
 }
