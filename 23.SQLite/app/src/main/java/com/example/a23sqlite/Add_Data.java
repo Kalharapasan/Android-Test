@@ -54,17 +54,18 @@ public class Add_Data extends AppCompatActivity {
 
                 if(fname.isEmpty() || lname.isEmpty() || gend.isEmpty() || mail.isEmpty() ){
                     Toast.makeText(Add_Data.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                    cleanForm();
                     return;
                 }
                 long rowID = dbHelp.inserData(fname,lname,gend,mail);
                 if (rowID != -1){
                     Toast.makeText(Add_Data.this, "Inserted Successfully (ID: " + rowID + ")", Toast.LENGTH_SHORT).show();
+                    Intent intent =new Intent(Add_Data.this,MainActivity.class);
+                    startActivity(intent);
                 }else{
                     Toast.makeText(Add_Data.this, "Error \n Insert Fail", Toast.LENGTH_SHORT).show();
+                    cleanForm();
                 }
-
-                cleanForm();
-
             }
         });
 
