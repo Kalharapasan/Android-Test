@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "25.ImageView"
 include(":app")
- 
