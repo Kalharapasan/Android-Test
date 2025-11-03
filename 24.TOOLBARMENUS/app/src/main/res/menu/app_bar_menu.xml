@@ -19,4 +19,14 @@
         android:icon="@drawable/ic_favorites_foreground"
         app:showAsAction="always"/>
 
+    <item
+        android:id="@+id/miFeedback"
+        android:title="Give Feedback"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/miClose"
+        android:title="Cloe App"
+        app:showAsAction="never"/>
+
 </menu>
