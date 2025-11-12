@@ -8,28 +8,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- TextView to display selected date -->
+    <!-- TextView to show selected time -->
     <TextView
-        android:id="@+id/textViewDate"
+        android:id="@+id/textViewTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a Date"
+        android:text="Select Time"
         android:textSize="24sp"
-        android:gravity="center"
         android:layout_marginTop="50dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Button to open DatePicker -->
+    <!-- Button to open TimePicker -->
     <Button
-        android:id="@+id/buttonPickDate"
+        android:id="@+id/buttonTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pick Date"
+        android:text="Pick Time"
         android:layout_marginTop="30dp"
-        app:layout_constraintTop_toBottomOf="@id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@id/textViewTime"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
